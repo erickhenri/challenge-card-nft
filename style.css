@@ -1,0 +1,154 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    /*Variaveis*/
+    /*### Primary*/
+
+    --Soft-blue: hsl(215, 51%, 70%);
+    --Cyan: hsl(178, 100%, 50%);
+
+/*### Neutral*/
+
+    --very-dark-blue-body: 	hsl(216, 55.2%, 11.4%);
+    --very-dar-blue-bg-1: hsl(216, 57%, 11%);
+    --Very-dark-blue-2: hsl(217, 55%, 10%);
+    --Very-dark-blue-card: hsl(214, 50%, 16%);
+    --Very-dark-blue-line: hsl(215, 32%, 27%);
+    --White: hsl(0, 0%, 100%);
+
+    font-family: 'Outfit', sans-serif;
+}
+
+body{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: var(--very-dark-blue-body);
+}
+
+.background-1{
+    background-color: var(--very-dar-blue-bg-1);
+    padding: 28px;
+    border-radius: 64px;
+}
+
+.background-2{
+    background-color: var(--Very-dark-blue-2);
+    padding: 16px;
+    border-radius: 48px;
+
+}
+/*====== CARD*/
+.card{
+   background-color: var(--Very-dark-blue-card);
+
+   width: 302px;
+
+   border-radius: 12px;
+   padding: 24px;
+   position: relative;
+   top: -20px;
+
+}
+.card-images{
+    position: relative;
+    height: 100%;
+}
+.card-images img.equilibrium{
+    width: 100%;
+    height: auto;
+
+    border-radius: 8px;
+}
+
+.card-images .view {
+    position: absolute;
+    width: 100%;
+    height: 302px;
+    border-radius: 8px;
+    
+    left: 0;
+    top: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    transition: 0.3s;
+}
+
+.card-images .view img {
+    display: none;
+    transition: 0.3s;
+}
+
+.card p{
+    color: var(--Soft-blue);
+    font-size: 18px;
+} 
+/*======= INFORMATION*/
+.info h1{
+    color: var(--White);
+    font-size: 24px;
+    margin: 24px 0;
+    transition: 0.3s;
+}
+
+
+/*========= Datas*/
+.data{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 24px 0;
+}
+
+.data .money{
+    color: var(--Cyan);
+}
+
+.division{
+    width: 100%;
+    height: 1px;
+    background-color: var(--Very-dark-blue-line);
+    margin-bottom: 16px;
+}
+/*======== USER*/
+.user-profile{
+    display: flex;
+   align-items: center;
+}
+
+.user-profile .user-avatar{
+    width: 32px;
+    margin-right: 12px;
+    border: 1px white solid;
+    border-radius: 100%;
+}
+
+.user-profile span{
+    color: var(--White);
+    transition: 0.3s;
+}
+
+/* ======== HOVER*/
+.info h1:hover,
+.user-profile span:hover{
+    cursor: pointer;
+    color: var(--Cyan);
+}
+
+.card-images .view:hover img{
+    display:inherit;
+}
+
+.card-images .view:hover{
+    background-color: hsla(178, 100%, 50%, 0.5);
+    cursor: pointer;
+}
+
+
